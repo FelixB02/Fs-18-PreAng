@@ -1,1 +1,81 @@
-/*# sourceMappingURL=navbar.component.css.map */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  color: white;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #c94b4b;
+  transition: 0.4s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav #nav-link1:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(160, 58, 77, 0.85);
+  transition: 1s;
+}
+
+.navbar-dark .navbar-nav #nav-link2:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(146, 51, 77, 0.85);
+  transition: 1s;
+}
+
+.navbar-dark .navbar-nav #nav-link3:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(130, 43, 78, 0.85);
+  transition: 1s;
+}
+
+.navbar-dark .navbar-nav #nav-link4:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(115, 36, 77, 0.85);
+  transition: 1s;
+}
+
+.navbar-dark .navbar-nav #nav-link5:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(106, 32, 78, 0.85);
+  transition: 1s;
+}
+
+.navbar-dark .navbar-nav #nav-link6:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(85, 23, 79, 0.85);
+  transition: 1s;
+}
+
+.nav-link {
+  transition: 0.2s;
+  padding-left: 3vh;
+  color: white !important;
+}
+
+#linkcont {
+  width: 50vh;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar {
+  background: radial-gradient(circle, #c94b4b 0%, #4b134f 100%);
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-item {
+    width: 30%;
+  }
+}/*# sourceMappingURL=navbar.component.css.map */
