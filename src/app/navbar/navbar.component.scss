@@ -10,6 +10,11 @@ nav {
     top: 0;
 }
 
+#navinner {
+    display: flex;
+    justify-content: center;
+}
+
 nav a {
     font-size: 1.9vh;
     text-transform: uppercase;
@@ -26,10 +31,50 @@ nav a {
 nav .animation {
     position: absolute;
     height: 100%;
-    top: 0;
+    bottom: 0;
     z-index: 0;
     border-radius: 1.7vh;
     transition: all .7s ease 0s;
+}
+
+nav .start-home,
+a:nth-child(1).active~.animation {
+    width: 8%;
+    left: 30%;
+    height: 100%;
+    background: #251e3e;
+}
+
+nav .start-about,
+a:nth-child(2).active~.animation {
+    width: 8%;
+    left: 38%;
+    height: 100%;
+    background: #451e3e;
+}
+
+nav .start-blog,
+a:nth-child(3).active~.animation {
+    width: 8%;
+    left: 46%;
+    height: 100%;
+    background: #651e3e;
+}
+
+nav .start-portfolio,
+a:nth-child(4).active~.animation {
+    width: 8%;
+    left: 54%;
+    height: 100%;
+    background: #851e3e;
+}
+
+nav .start-contact,
+a:nth-child(5).active~.animation {
+    width: 8%;
+    left: 62%;
+    height: 100%;
+    background: #c72154;
 }
 
 a:nth-child(1) {
@@ -37,14 +82,14 @@ a:nth-child(1) {
 }
 
 a:nth-child(1):hover {
-    color: #c72154;
     transition: 0.7s;
 }
 
 nav .start-home,
 a:nth-child(1):hover~.animation {
     width: 8%;
-    left: 0;
+    left: 30%;
+    height: 10%;
     background: #251e3e;
 }
 
@@ -53,14 +98,14 @@ a:nth-child(2) {
 }
 
 a:nth-child(2):hover {
-    color: #851e3e;
     transition: 0.7s;
 }
 
 nav .start-about,
 a:nth-child(2):hover~.animation {
     width: 8%;
-    left: 8%;
+    left: 38%;
+    height: 10%;
     background: #451e3e;
 }
 
@@ -69,14 +114,14 @@ a:nth-child(3) {
 }
 
 a:nth-child(3):hover {
-    color: black;
     transition: 0.7s;
 }
 
 nav .start-blog,
 a:nth-child(3):hover~.animation {
     width: 8%;
-    left: 16%;
+    left: 46%;
+    height: 10%;
     background: #651e3e;
 }
 
@@ -85,14 +130,14 @@ a:nth-child(4) {
 }
 
 a:nth-child(4):hover {
-    color: #451e3e;
     transition: 0.7s;
 }
 
 nav .start-portfolio,
 a:nth-child(4):hover~.animation {
     width: 8%;
-    left: 24%;
+    left: 54%;
+    height: 10%;
     background: #851e3e;
 }
 
@@ -101,163 +146,13 @@ a:nth-child(5) {
 }
 
 a:nth-child(5):hover {
-    color: #251e3e;
     transition: 0.7s;
 }
 
 nav .start-contact,
 a:nth-child(5):hover~.animation {
     width: 8%;
-    left: 32%;
-    background: #c72154
-}
-
-@media screen and (max-width: 1400px) {
-    a:nth-child(1) {
-        width: 11%;
-    }
-    nav .start-home,
-    a:nth-child(1):hover~.animation {
-        width: 11%;
-        left: 0;
-        background: #251e3e;
-    }
-    a:nth-child(2) {
-        width: 11%;
-    }
-    nav .start-about,
-    a:nth-child(2):hover~.animation {
-        width: 11%;
-        left: 11%;
-        background: #451e3e;
-    }
-    a:nth-child(3) {
-        width: 11%;
-    }
-    nav .start-blog,
-    a:nth-child(3):hover~.animation {
-        width: 11%;
-        left: 22%;
-        background: #651e3e;
-    }
-    a:nth-child(4) {
-        width: 11%;
-    }
-    nav .start-portfolio,
-    a:nth-child(4):hover~.animation {
-        width: 11%;
-        left: 33%;
-        background: #851e3e;
-    }
-    a:nth-child(5) {
-        width: 11%;
-    }
-    nav .start-contact,
-    a:nth-child(5):hover~.animation {
-        width: 11%;
-        left: 44%;
-        background: #c72154
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    a:nth-child(1) {
-        width: 16%;
-    }
-    nav .start-home,
-    a:nth-child(1):hover~.animation {
-        width: 16%;
-        left: 0;
-        background: #251e3e;
-    }
-    a:nth-child(2) {
-        width: 16%;
-    }
-    nav .start-about,
-    a:nth-child(2):hover~.animation {
-        width: 16%;
-        left: 16%;
-        background: #451e3e;
-    }
-    a:nth-child(3) {
-        width: 16%;
-    }
-    nav .start-blog,
-    a:nth-child(3):hover~.animation {
-        width: 16%;
-        left: 32%;
-        background: #651e3e;
-    }
-    a:nth-child(4) {
-        width: 16%;
-    }
-    nav .start-portfolio,
-    a:nth-child(4):hover~.animation {
-        width: 16%;
-        left: 48%;
-        background: #851e3e;
-    }
-    a:nth-child(5) {
-        width: 16%;
-    }
-    nav .start-contact,
-    a:nth-child(5):hover~.animation {
-        width: 16%;
-        left: 64%;
-        background: #c72154
-    }
-}
-
-@media screen and (max-width: 700px) {
-    a:nth-child(1) {
-        width: 20%;
-    }
-    nav .start-home,
-    a:nth-child(1):hover~.animation {
-        width: 20%;
-        left: 0;
-        background: #251e3e;
-    }
-    a:nth-child(2) {
-        width: 20%;
-    }
-    nav .start-about,
-    a:nth-child(2):hover~.animation {
-        width: 20%;
-        left: 20%;
-        background: #451e3e;
-    }
-    a:nth-child(3) {
-        width: 20%;
-    }
-    nav .start-blog,
-    a:nth-child(3):hover~.animation {
-        width: 20%;
-        left: 40%;
-        background: #651e3e;
-    }
-    a:nth-child(4) {
-        width: 20%;
-    }
-    nav .start-portfolio,
-    a:nth-child(4):hover~.animation {
-        width: 20%;
-        left: 60%;
-        background: #851e3e;
-    }
-    a:nth-child(5) {
-        width: 20%;
-    }
-    nav .start-contact,
-    a:nth-child(5):hover~.animation {
-        width: 20%;
-        left: 80%;
-        background: #c72154
-    }
-}
-
-@media screen and (max-width: 450px) {
-    nav a {
-        font-size: 1.4vh;
-    }
+    left: 62%;
+    height: 10%;
+    background: #c72154;
 }

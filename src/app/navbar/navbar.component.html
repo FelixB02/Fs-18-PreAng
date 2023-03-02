@@ -10,12 +10,14 @@
 
 <body>
     <nav>
-        <a routerLinkActive="active" routerLink="/"> Home</a>
-        <a routerLinkActive="active" routerLink="/page1"> About</a>
-        <a routerLinkActive="active" routerLink="/page2"> Blog</a>
-        <a routerLinkActive="active" routerLink="/page3"> Portfolio</a>
-        <a routerLinkActive="active" routerLink="/page4"> Contact</a>
-        <div class="animation start-home"></div>
+        <div id="navinner">
+            <a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}"> Home</a>
+            <a routerLinkActive="active" routerLink="/page1"> About</a>
+            <a routerLinkActive="active" routerLink="/page2"> Blog</a>
+            <a routerLinkActive="active" routerLink="/page3"> Portfolio</a>
+            <a routerLinkActive="active" routerLink="/page4"> Contact</a>
+            <div class="animation start-home"></div>
+        </div>
     </nav>
 </body>
 
